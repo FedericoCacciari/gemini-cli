@@ -1,0 +1,21 @@
+{
+    // "code-runner.cwd": "D:\\gitProjects\\gemini\\board",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "gemini-ai-*.json":true,
+        ".vscode":true,
+        ".venv":true,
+        "Pipfile":true,
+    },
+    "code-runner.executorMapByGlob": {
+        "*-site.py":"$pythonPath -m streamlit run $fullFileName",
+        "temp*":"$pythonPath -u $fullFileName --debug"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true
+}
